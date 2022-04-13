@@ -1,5 +1,5 @@
 # Check flake8 linter
-name: Check linter
+name: check-lint
 
 # Trigger the workflow on push
 on:
