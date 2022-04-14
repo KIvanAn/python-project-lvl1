@@ -105,3 +105,19 @@ def get_progression():
     print('Question: {0}'.format(' '.join(progres)))
 
     return secret_num
+
+
+def is_prime():
+    """
+    Check is prime number function.
+
+    Returns:
+        str
+    """
+    number = randint(0, 100)
+    print('Question: {0}'.format(number))
+
+    for num in range(2, int(number**0.5) + 1):
+        if number % num == 0:
+            return 'no'
+    return 'yes'
