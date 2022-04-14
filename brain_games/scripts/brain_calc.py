@@ -1,19 +1,19 @@
 #!/usr/bin/env python
-"""Brain even main package."""
+"""Brain calc main package."""
 import prompt
-from brain_games.gen_func import is_even, welcome_user, wrong_message
+from brain_games.gen_func import calculate, welcome_user, wrong_message
 
 
 def main():
-    """Brain even main function."""
+    """Brain calc main function."""
     name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What is the result of the expression?')
 
     count = 0
 
     while True:
-        correct = is_even()
-        answer = prompt.string('Your answer: ')
+        correct = calculate()
+        answer = int(prompt.string('Your answer: '))
 
         if answer == correct:
             print('Correct!')
