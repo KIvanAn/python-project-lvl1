@@ -1,4 +1,5 @@
 """General functions for brain games package."""
+import math
 from random import choice, randint
 
 import prompt
@@ -66,3 +67,18 @@ def calculate():
         return number1 + number2
     elif operation == '*':
         return number1 * number2
+
+
+def find_gcd():
+    """
+    GCD function.
+
+    Returns:
+        int
+    """
+    number1 = randint(0, 100)
+    number2 = randint(0, 100)
+
+    print('Question: {0} {1}'.format(number1, number2))
+
+    return math.gcd(number1, number2)

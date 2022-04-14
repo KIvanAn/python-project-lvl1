@@ -8,3 +8,4 @@
 ### Example work programms:
 - ** brain-even ** https://asciinema.org/a/rm05FdsJzg2XKAZ8EFajbMZgT
 - ** brain-calc ** https://asciinema.org/a/qK2I4K5TgIZnSv4PNzWpK6PGO
+- ** brain-gcd ** https://asciinema.org/a/fQlAJw2n33oBfFYicjAFfsrYH
