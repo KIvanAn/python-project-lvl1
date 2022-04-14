@@ -82,3 +82,26 @@ def find_gcd():
     print('Question: {0} {1}'.format(number1, number2))
 
     return math.gcd(number1, number2)
+
+
+def get_progression():
+    """
+    Progression function.
+
+    Returns:
+        int
+    """
+    step = randint(1, 5)
+    index = randint(0, 9)
+    acc = 0
+    progres = []
+    for _ in range(10):
+        acc += step
+        progres.append(str(acc))
+
+    secret_num = int(progres[index])
+    progres[index] = '..'
+
+    print('Question: {0}'.format(' '.join(progres)))
+
+    return secret_num
